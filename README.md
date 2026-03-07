@@ -1,6 +1,8 @@
 # Verilator Cocotb Template:
 ## Initial Setup after downloading template:
-python3 -m venv .venv
+Run the following commands. Note that at the time, Python3.13 is the maximum version cocotb supports.
+
+python3.13 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
