@@ -32,6 +32,7 @@ run: pre_clean sim
 pre_clean:
 	rm -f $(PWD)/dump.vcd
 	rm -f $(PWD)/*.log
+	rm -f $(PWD)/dump.fst
 	rm -f $(PWD)/results.xml
 	rm -rf $(PWD)/tb/__pycache__
 	rm -rf $(PWD)/sim
@@ -39,4 +40,4 @@ pre_clean:
 wave:
 # 	@mkdir -p $(PWD)/waves
 # 	@if [ -f dump.vcd ]; then mv dump.vcd $(PWD)/waves/dump.vcd; fi
-	gtkwave $(PWD)/dump.vcd
+	gtkwave $(PWD)/dump.fst

@@ -2,6 +2,7 @@
 sim/
 waves/
 *.vcd
+*.fst
 *.log
 
 # python
