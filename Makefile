@@ -4,7 +4,7 @@
 # defaults
 SIM ?= verilator
 TOPLEVEL_LANG ?= verilog
-EXTRA_ARGS += --trace --trace-structs
+EXTRA_ARGS += --trace --trace-fst --trace-structs
 
 VERILOG_SOURCES += $(PWD)/rtl/Buffer.sv
 # use VHDL_SOURCES for VHDL files
